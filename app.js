@@ -30,20 +30,7 @@ var router = express.Router();
 router.use(function timeLog(req, res, next) {
   console.log('Time: ', Date.now());
   next();
-});
-// define the home page route
-router.get('/', function (req, res) {
-  res.send('Birds home page');
-});
-// define the about route
-router.get('/about', function (req, res) {
-  res.send('About birds');
-});
-
-module.exports = router;
-
-var birds = require('./birds');
-app.use('/birds', birds);
+})
 
 app.get(
   '/example/d',
@@ -142,5 +129,5 @@ app.use(express.static('public'))
 app.use(express.static('files'))
 app.use('/static', express.static(__dirname + '/public'))
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+  console.log('OIIIIIIIIIIIIIIIIII VSE robit partal 3000')
 })
